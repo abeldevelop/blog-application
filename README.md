@@ -3,12 +3,12 @@ Blog Backend Microservices
 Este repositorio no tiene ningun tipo de codigo, simplemente es la documentación de todas las partes de la aplicación y arquitectura necesaria para crearla con [Spring Boot](https://spring.io/projects/spring-boot) y [Maven](https://maven.apache.org/) en la parte backend y [Angular](https://angular.io/) en el frontend (*La parte de Angular se realizara despues finalizar la parte backend*)
 
 ### Table of Contents
-**[Maven Parent POMs](#maven-parent-poms)**
-**[maven-archetypes](#maven-archetypes)**
-**[Compilation and Excecution order](#compilation-and-excecution-order)**
-**[Liraries Repositories](#liraries-repositories)**
-**[Servers Repositories](#servers-repositories)**
-**[Services Repositories](#services-repositories)**
+**[Maven Parent POMs](#maven-parent-poms)**<br>
+**[maven-archetypes](#maven-archetypes)**<br>
+**[Compilation and Excecution order](#compilation-and-excecution-order)**<br>
+**[Liraries Repositories](#liraries-repositories)**<br>
+**[Servers Repositories](#servers-repositories)**<br>
+**[Services Repositories](#services-repositories)**<br>
 
 Maven Parent POMs
 ======
