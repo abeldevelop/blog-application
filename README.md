@@ -1,12 +1,26 @@
-Blog Application
+Blog Backend Microservices
 ======
-Este repositorio no tiene ningun tipo de codigo, simplemente es la documentación de todas las partes de la aplicación y arquitectura necesaria para crearla con Spring Cloud en la parte backend y Angular en el frontend
+Este repositorio no tiene ningun tipo de codigo, simplemente es la documentación de todas las partes de la aplicación y arquitectura necesaria para crearla con [Spring Boot](https://spring.io/projects/spring-boot) y [Maven](https://maven.apache.org/) en la parte backend y [Angular](https://angular.io/) en el frontend (*La parte de Angular se realizara despues finalizar la parte backend*)
 
 ### Table of Contents
-**[Compilation and Excecution order](#compilation-and-excecution-order)**<br>
-**[Liraries Repositories](#liraries-repositories)**<br>
-**[Servers Repositories](#servers-repositories)**<br>
-**[Services Repositories](#services-repositories)**<br>
+**[Maven Parent POMs](#maven-parent-poms)**
+**[maven-archetypes](#maven-archetypes)**
+**[Compilation and Excecution order](#compilation-and-excecution-order)**
+**[Liraries Repositories](#liraries-repositories)**
+**[Servers Repositories](#servers-repositories)**
+**[Services Repositories](#services-repositories)**
+
+Maven Parent POMs
+======
+Para simplificar la creacion de nuevos servicios y librerias se ha creado parents POM
+* **[Architecture parent POM](https://github.com/abeldevelop/parent-pom/tree/develop/architecture-parent-pom)**
+* **[Services Parent POM](https://github.com/abeldevelop/parent-pom/tree/develop/services-parent-pom)**
+
+Maven Archetypes
+======
+Para simplificar la creacion de nuevos servicios y librerias se ha creado arquetipos maven
+* **Service Archetype** => TODO
+* **Library Archetype** => TODO
 
 Compilation and Excecution order
 ======
