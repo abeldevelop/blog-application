@@ -9,6 +9,7 @@ Este repositorio no tiene ningun tipo de codigo, simplemente es la documentació
 **[Liraries Repositories](#liraries-repositories)**<br>
 **[Servers Repositories](#servers-repositories)**<br>
 **[Services Repositories](#services-repositories)**<br>
+**[Services Structure and modules](#services-structure-and-modules)**<br>
 
 Maven Parent POMs
 ======
@@ -76,3 +77,53 @@ Services repositories
 | blog-comments-service | TODO |
 | blog-service | TODO |
 | users-service | TODO |
+
+Services Structure and modules
+======
+Todos los servicios tienen en la raiz del respositorio un proyecto parent pom de maven, dentro de este se encuentra los siguientes modulos
+* blog-_serviceName_-api    => Interfaz con la definicion del contrato con las anotaciones Swagger
+* blog-_serviceName_-client     => Clientes Feign para conectarse con el microservicio
+* blog-_serviceName_-dto        => DTOs de entrada y salida para el microservicio con las anotaciones Swagger
+* blog-_serviceName_-model      => Modelo de la base de datos con las anotaciones JPA
+* blog-_serviceName_-repository => Repositorio de acceso a datos con Spring Data y Query DSL
+* blog-_serviceName_-service    => Microservicio con Spring Boot
+
+Packages module blog-_serviceName_-api
+------
+* com.abeldevelop.blog.category.api => Interfaz para contrato de la API con anotaciones Swagger
+
+Packages Module blog-_serviceName_-client
+------
+* com.abeldevelop.blog.category.client => Interfaz con anotaciones Feign para los clientes de la API
+
+Packages Module blog-_serviceName_-dto
+------
+* com.abeldevelop.blog.category.dto   => DTOs de entrada y salida para el microservicio con las anotaciones Swagger
+
+Packages Module blog-_serviceName_-model
+------
+* com.abeldevelop.blog.category.model => Modelo de la base de datos con las anotaciones JPA
+
+
+Packages Module blog-_serviceName_-repository
+------
+* com.abeldevelop.blog.category.repository            => Interfaz con acceso a base de datos
+* com.abeldevelop.blog.category.repository.predicate  => Predicados con Query DSL
+* com.abeldevelop.blog.category.repository.springdata => Interfaz de repositorio de spring data
+
+
+
+Packages Module blog-_serviceName_-service
+------
+* com.abeldevelop.blog.category.service.component   => Beans gestionados por Spring que no se corresponden con logica de negocio
+* com.abeldevelop.blog.category.service.config      => Configuracion del microservicio
+* com.abeldevelop.blog.category.service.controller  => Controlador del microservicio
+* com.abeldevelop.blog.category.service.domain      => Objetos de dominio
+* com.abeldevelop.blog.category.service.exception   => Excepciones propias del microservicio
+* com.abeldevelop.blog.category.service.mapper      => Mapeo entre objetos con MapStruct
+* com.abeldevelop.blog.category.service.service     => Beans de Spring con logica de negocio
+* com.abeldevelop.blog.category.service.util        => Clases de utilidades/constantes
+* com.abeldevelop.blog.category.service.validation  => Objetos de validacion de los datos de entrada al microservicio
+
+
+
