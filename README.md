@@ -3,10 +3,10 @@ Blog Application
 Este repositorio no tiene ningun tipo de codigo, simplemente es la documentación de todas las partes de la aplicación y arquitectura necesaria para crearla con Spring Cloud en la parte backend y Angular en el frontend
 
 ### Table of Contents
-**[Compilation and Excecution order](#compilation-and-excecution-order)**
-**[Liraries Repositories](#liraries-repositories)**
-**[Servers Repositories](#servers-repositories)**
-**[Services Repositories](#services-repositories)**
+**[Compilation and Excecution order](#compilation-and-excecution-order)**<br>
+**[Liraries Repositories](#liraries-repositories)**<br>
+**[Servers Repositories](#servers-repositories)**<br>
+**[Services Repositories](#services-repositories)**<br>
 
 Compilation and Excecution order
 ======
