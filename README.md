@@ -18,7 +18,7 @@ Este repositorio no tiene ningun tipo de codigo, simplemente es la documentació
 Maven Parent POMs
 ======
 Para simplificar la gestión de las dependencias  ha creado un parent POM
-* **[Abeldevelop parent POM](https://github.com/abeldevelop/parent-pom/tree/develop/architecture-parent-pom)**
+* **[Abeldevelop parent POM](https://github.com/abeldevelop/parent-pom/tree/develop/abeldevelop-parent-pom)**
 
 Maven Archetypes
 ======
