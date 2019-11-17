@@ -5,23 +5,37 @@ Este repositorio no tiene ningun tipo de codigo, simplemente es la documentació
 ### Table of Contents
 **[Maven Parent POMs](#maven-parent-poms)**<br>
 **[maven-archetypes](#maven-archetypes)**<br>
+**[Starters](#starters)**<br>
 **[Compilation and Excecution order](#compilation-and-excecution-order)**<br>
 **[Liraries Repositories](#liraries-repositories)**<br>
 **[Servers Repositories](#servers-repositories)**<br>
 **[Services Repositories](#services-repositories)**<br>
 **[Services Structure and modules](#services-structure-and-modules)**<br>
+**[Data Base Models](#data-base-models)**<br>
+**[Pending to Analize](#pending-to-analize)**<br>
+
 
 Maven Parent POMs
 ======
-Para simplificar la creacion de nuevos servicios y librerias se ha creado parents POM
-* **[Architecture parent POM](https://github.com/abeldevelop/parent-pom/tree/develop/architecture-parent-pom)**
-* **[Services Parent POM](https://github.com/abeldevelop/parent-pom/tree/develop/services-parent-pom)**
+Para simplificar la gestión de las dependencias  ha creado un parent POM
+* **[Abeldevelop parent POM](https://github.com/abeldevelop/parent-pom/tree/develop/architecture-parent-pom)**
 
 Maven Archetypes
 ======
-Para simplificar la creacion de nuevos servicios y librerias se ha creado arquetipos maven
-* **Service Archetype** => TODO
-* **Library Archetype** => TODO
+Para simplificar la creacion de nuevos servicios y librerias se han creado arquetipos maven
+* **Abeldevelop Service Archetype** => TODO
+* **Abeldevelop Library Archetype** => TODO
+
+Starters
+======
+Debido a que cada modulo tendra muchas dependencias comunes se ha decidido crear starters
+* **Abeldevelop Api Starter** => TODO
+* **Abeldevelop Client Starter** => TODO
+* **Abeldevelop Dto Starter** => TODO
+* **Abeldevelop Model Starter** => TODO
+* **Abeldevelop Repository Starter** => TODO
+* **Abeldevelop Service Starter** => TODO
+
 
 Compilation and Excecution order
 ======
@@ -66,6 +80,8 @@ Servers repositories
 | zipkin-server | TODO |
 | discovery-server | TODO |
 | admin-server | TODO |
+| management-server | TODO |
+| parameterization-server | TODO |
 
 Services repositories
 ======
@@ -126,4 +142,31 @@ Packages Module blog-_serviceName_-service
 * com.abeldevelop.blog.category.service.validation  => Objetos de validacion de los datos de entrada al microservicio
 
 
+Data Base Models
+======
 
+Contracts
+------
+Table contracts (Pending schema)
+* id
+* aplication
+* service
+* URL
+* enabled
+
+Management
+------
+Table services_versions (Pending schema)
+* id
+* service
+* service_version
+* parent_pom_version
+
+
+Pending to Analize
+======
+* Front end para unificar contratos por aplicacion
+* MS para dar de alta los contratos por aplicacion
+* En el starter de los servicios registrar en BBDD al levantarse la version del MS y del parent pom
+* Diseñar el modelo de datos para el menu
+* ¿Como cambiar en caliente los datos de autenticación y los permisos?
