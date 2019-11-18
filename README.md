@@ -60,6 +60,8 @@ Liraries repositories
 | ------ | ------ |
 | logging-library | TODO |
 | properties-library | TODO |
+| pagination-library | TODO |
+| annotation-library | TODO |
 | aspects-library | TODO |
 | context-library | TODO |
 | exception-library | TODO |
@@ -98,8 +100,9 @@ Services repositories
 Services Structure and modules
 ======
 Todos los servicios tienen en la raiz del respositorio un proyecto parent pom de maven, dentro de este se encuentra los siguientes modulos
-* blog-_serviceName_-api    => Interfaz con la definicion del contrato con las anotaciones Swagger
+* blog-_serviceName_-api        => Interfaz con la definicion del contrato con las anotaciones Swagger
 * blog-_serviceName_-client     => Clientes Feign para conectarse con el microservicio
+* blog-_serviceName_-domain     => Objetos de dominion del microservicio
 * blog-_serviceName_-dto        => DTOs de entrada y salida para el microservicio con las anotaciones Swagger
 * blog-_serviceName_-model      => Modelo de la base de datos con las anotaciones JPA
 * blog-_serviceName_-repository => Repositorio de acceso a datos con Spring Data y Query DSL
@@ -112,6 +115,10 @@ Packages module blog-_serviceName_-api
 Packages Module blog-_serviceName_-client
 ------
 * com.abeldevelop.blog.category.client => Interfaz con anotaciones Feign para los clientes de la API
+
+Packages Module blog-_serviceName_-domain
+------
+* com.abeldevelop.blog.category.domain => Objetos de dominio del microservicio
 
 Packages Module blog-_serviceName_-dto
 ------
