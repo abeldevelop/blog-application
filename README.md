@@ -46,8 +46,8 @@ Lo primero de todo que se debe compilar es [Abeldevelop parent POM](https://gith
 Liraries compilation order
 ------
 * context-library
-* exception-library
 * common-library
+* exception-library
 
 Starters compilation order
 ------
