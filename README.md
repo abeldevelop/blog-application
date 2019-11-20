@@ -63,10 +63,10 @@ Liraries repositories
 | pagination-library | TODO |
 | annotation-library | TODO |
 | aspects-library | TODO |
-| context-library | TODO |
+| context-library | [Github Repository](https://github.com/abeldevelop/context-library) |
 | exception-library | TODO |
 | security-library | TODO |
-| common-library | https://github.com/abeldevelop/common-library |
+| common-library | [Github Repository](https://github.com/abeldevelop/common-library) |
 | test-library | TODO |
 
  
