@@ -66,7 +66,7 @@ Liraries repositories
 | context-library | TODO |
 | exception-library | TODO |
 | security-library | TODO |
-| common-library | TODO |
+| common-library | https://github.com/abeldevelop/common-library |
 | test-library | TODO |
 
  
@@ -170,6 +170,9 @@ Table services_versions (Pending schema)
 * service_version
 * parent_pom_version
 
+Pending to Develop
+======
+* 
 
 Pending to Analize
 ======
