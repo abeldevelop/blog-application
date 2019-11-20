@@ -64,7 +64,7 @@ Liraries repositories
 | annotation-library | TODO |
 | aspects-library | TODO |
 | context-library | [Github Repository](https://github.com/abeldevelop/context-library) |
-| exception-library | TODO |
+| exception-library | [Github Repository](https://github.com/abeldevelop/exception-library) |
 | security-library | TODO |
 | common-library | [Github Repository](https://github.com/abeldevelop/common-library) |
 | test-library | TODO |
