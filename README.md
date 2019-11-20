@@ -41,9 +41,17 @@ Debido a que cada modulo tendra muchas dependencias comunes se ha decidido crear
 Compilation and Excecution order
 ======
 
+Lo primero de todo que se debe compilar es [Abeldevelop parent POM](https://github.com/abeldevelop/parent-pom/tree/develop/abeldevelop-parent-pom)
+
 Liraries compilation order
 ------
-* 
+* context-library
+* exception-library
+* common-library
+
+Starters compilation order
+------
+* No importa el orden
 
 Servers execution order
 ------
@@ -59,10 +67,10 @@ Liraries repositories
 | Library | Repository |
 | ------ | ------ |
 | logging-library | TODO |
-| properties-library | TODO |
+| propertie-library | TODO |
 | pagination-library | TODO |
 | annotation-library | TODO |
-| aspects-library | TODO |
+| aspect-library | TODO |
 | context-library | [Github Repository](https://github.com/abeldevelop/context-library) |
 | exception-library | [Github Repository](https://github.com/abeldevelop/exception-library) |
 | security-library | TODO |
@@ -73,29 +81,28 @@ Liraries repositories
 Servers repositories
 ======
 
-| Server | Repository |
-| ------ | ------ |
-| discovery-server | TODO |
-| gateway-server | TODO |
-| config-server | TODO |
-| hystrix-server | TODO |
-| security-server | TODO |
-| zipkin-server | TODO |
-| discovery-server | TODO |
-| admin-server | TODO |
-| management-server | TODO |
-| parameterization-server | TODO |
+| Server | Port | Repository |
+| ------ | ------ | ------ |
+| discovery-server | 8761 | TODO |
+| gateway-server | 9000 | TODO |
+| config-server | 8888 | TODO |
+| hystrix-server | 0000 | TODO |
+| security-server | 0000 | TODO |
+| zipkin-server | 9411 | TODO |
+| admin-server | 0000 | TODO |
+| management-server | 8610 | TODO |
+| parameterization-server | 8620 | TODO |
 
 Services repositories
 ======
-| Service | repository |
-| ------ | ------ |
-| blog-categories-service | [Github Repository](https://github.com/abeldevelop/blog-categories-service) |
-| blog-subcategories-service | TODO |
-| blog-posts-service | TODO |
-| blog-comments-service | TODO |
-| blog-service | TODO |
-| users-service | TODO |
+| Service | Port | repository |
+| ------ | ------ | ------ |
+| blog-categories-service | 8210 | [Github Repository](https://github.com/abeldevelop/blog-categories-service) |
+| blog-subcategories-service | 8220 | TODO |
+| blog-posts-service | 8230 | TODO |
+| blog-comments-service | 8240 | TODO |
+| blog-service | 8250 | TODO |
+| users-service | 8260 | TODO |
 
 Services Structure and modules
 ======
