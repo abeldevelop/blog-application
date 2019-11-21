@@ -45,9 +45,13 @@ Lo primero de todo que se debe compilar es [Abeldevelop parent POM](https://gith
 
 Liraries compilation order
 ------
+* propertie-library
+* logging-library
 * context-library
 * common-library
 * exception-library
+* pagination-library
+* test-library
 
 Starters compilation order
 ------
@@ -66,16 +70,16 @@ Liraries repositories
 
 | Library | Repository |
 | ------ | ------ |
-| logging-library | TODO |
-| propertie-library | TODO |
-| pagination-library | TODO |
+| logging-library | [Github Repository](https://github.com/abeldevelop/logging-library) |
+| propertie-library | [Github Repository](https://github.com/abeldevelop/propertie-library) |
+| pagination-library | [Github Repository](https://github.com/abeldevelop/pagination-library) |
 | annotation-library | TODO |
 | aspect-library | TODO |
 | context-library | [Github Repository](https://github.com/abeldevelop/context-library) |
 | exception-library | [Github Repository](https://github.com/abeldevelop/exception-library) |
 | security-library | TODO |
 | common-library | [Github Repository](https://github.com/abeldevelop/common-library) |
-| test-library | TODO |
+| test-library | [Github Repository](https://github.com/abeldevelop/test-library) |
 
  
 Servers repositories
