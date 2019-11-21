@@ -96,6 +96,7 @@ Servers repositories
 | admin-server | 0000 | TODO |
 | management-server | 8610 | TODO |
 | parameterization-server | 8620 | TODO |
+| text-server | 8630 | TODO |
 
 Services repositories
 ======
@@ -183,7 +184,7 @@ Table services_versions (Pending schema)
 
 Pending to Develop
 ======
-* 
+
 
 Pending to Analize
 ======
