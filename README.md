@@ -184,7 +184,9 @@ Table services_versions (Pending schema)
 
 Pending to Develop
 ======
-
+* Cucumber add extra headers
+* Cucumber read request from json in classpath
+* Cucumber validate response with json classpath
 
 Pending to Analize
 ======
