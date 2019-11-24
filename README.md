@@ -3,8 +3,8 @@ Blog Backend Microservices
 Este repositorio no tiene ningun tipo de codigo, simplemente es la documentación de todas las partes de la aplicación y arquitectura necesaria para crearla con [Spring Boot](https://spring.io/projects/spring-boot) y [Maven](https://maven.apache.org/) en la parte backend y [Angular](https://angular.io/) en el frontend (*La parte de Angular se realizara despues finalizar la parte backend*)
 
 ### Table of Contents
-**[Maven Parent POMs](#maven-parent-poms)**<br>
-**[maven-archetypes](#maven-archetypes)**<br>
+**[Abeldevelop Parent POM](#abeldevelop-parent-pom)**<br>
+**[Abeldevelop Maven Archetype](#abeldevelop-maven-archetype)**<br>
 **[Starters](#starters)**<br>
 **[Compilation and Excecution order](#compilation-and-excecution-order)**<br>
 **[Libraries Repositories](#libraries-repositories)**<br>
@@ -14,72 +14,72 @@ Este repositorio no tiene ningun tipo de codigo, simplemente es la documentació
 **[Data Base Models](#data-base-models)**<br>
 **[Pending to Analize](#pending-to-analize)**<br>
 
+Abeldevelop Architecture Repositories Resumen
+======
+* **[Abeldevelop parent POM](https://github.com/abeldevelop/abeldevelop-parent-pom)** => Parent pom con la gestion de las versiones de las dependencias
+* **[Abeldevelop Config Repository](https://github.com/abeldevelop/abeldevelop-config-repository)** => Repositorio con la configuracion de las properties
+* **[Abeldevelop Libraries](https://github.com/abeldevelop/abeldevelop-libraries)** => Librerias de la arquitectura
+* **[Abeldevelop Servers](https://github.com/abeldevelop/abeldevelop-servers)** => Servidores (discovery, gateway, config, etc..)
+* **[Abeldevelop Starters](https://github.com/abeldevelop/abeldevelop-starters)** => Starters para simplificar y automatizas las dependencias los servicios
 
-Maven Parent POMs
+Blog Repositories Resumen
+======
+* **[Abeldevelop parent POM](https://github.com/abeldevelop/blog-categories-service)**
+
+Abeldevelop Parent POM
 ======
 Para simplificar la gestión de las dependencias  ha creado un parent POM
-* **[Abeldevelop parent POM](https://github.com/abeldevelop/parent-pom/tree/develop/abeldevelop-parent-pom)**
+* **[Abeldevelop parent POM](https://github.com/abeldevelop/abeldevelop-parent-pom)**
 
-Maven Archetypes
+Abeldevelop Maven Archetype
 ======
-Para simplificar la creacion de nuevos servicios y librerias se han creado arquetipos maven
+Para simplificar la creacion de nuevos servicios se ha creado un arquetipo maven
 * **Abeldevelop Service Archetype** => TODO
-* **Abeldevelop Library Archetype** => TODO
+
 
 Starters
 ======
-Debido a que cada modulo tendra muchas dependencias comunes se ha decidido crear starters
-* **[Abeldevelop Api Starter](https://github.com/abeldevelop/starters/tree/develop/api-starter)**
-* **[Abeldevelop Client Starter](https://github.com/abeldevelop/starters/tree/develop/client-starter)**
-* **[Abeldevelop Dto Starter](https://github.com/abeldevelop/starters/tree/develop/dto-starter)**
-* **[Abeldevelop Model Starter](https://github.com/abeldevelop/starters/tree/develop/model-starter)**
-* **[Abeldevelop Repository Starter](https://github.com/abeldevelop/starters/tree/develop/repository-starter)**
-* **[Abeldevelop Service Starter](https://github.com/abeldevelop/starters/tree/develop/service-starter)**
-* **[Abeldevelop Test Starter](https://github.com/abeldevelop/starters/tree/develop/test-starter)**
+Debido a que cada modulo de los servicios tendra muchas dependencias comunes se ha decidido crear starters, para simplificar las dependencias en los servicios
+* **[Abeldevelop Api Starter](https://github.com/abeldevelop/abeldevelop-starters/tree/develop/api-starter)**
+* **[Abeldevelop Client Starter](https://github.com/abeldevelop/abeldevelop-starters/tree/develop/client-starter)**
+* **[Abeldevelop Dto Starter](https://github.com/abeldevelop/abeldevelop-starters/tree/develop/dto-starter)**
+* **[Abeldevelop Model Starter](https://github.com/abeldevelop/abeldevelop-starters/tree/develop/model-starter)**
+* **[Abeldevelop Repository Starter](https://github.com/abeldevelop/abeldevelop-starters/tree/develop/repository-starter)**
+* **[Abeldevelop Service Starter](https://github.com/abeldevelop/abeldevelop-starters/tree/develop/service-starter)**
+* **[Abeldevelop Test Starter](https://github.com/abeldevelop/abeldevelop-starters/tree/develop/test-starter)**
 
 
 Compilation and Excecution order
 ======
+Como cada parte (starters, libraries, servers y cada service) tiene su propio parent pom. Se simplifica la compilacion
+* **[Abeldevelop parent POM](https://github.com/abeldevelop/abeldevelop-parent-pom)**
+* **[Abeldevelop Libraries](https://github.com/abeldevelop/abeldevelop-libraries)**
+* **[Abeldevelop Starters](https://github.com/abeldevelop/abeldevelop-starters)**
+* **Abeldevelop Api Servers** => TODO
 
-Lo primero de todo que se debe compilar es [Abeldevelop parent POM](https://github.com/abeldevelop/parent-pom/tree/develop/abeldevelop-parent-pom)
-
-Libraries compilation order
-------
-* propertie-library
-* logging-library
-* context-library
-* common-library
-* exception-library
-* pagination-library
-* test-library
-
-Starters compilation order
-------
-* No importa el orden
-
-Servers execution order
+Servers deployment order
 ------
 * discovery-server
 
 Services execution order
 ------
-* No importa el orden de arranque. Solo necesita el **config-server** arrancado
+* No importa el orden de arranque. Solo necesita que esten todos los **servers** arrancados
 
 Libraries repositories
 ======
 
-| Library | Repository |
-| ------ | ------ |
-| logging-library | [Github Repository](https://github.com/abeldevelop/logging-library) |
-| propertie-library | [Github Repository](https://github.com/abeldevelop/propertie-library) |
-| pagination-library | [Github Repository](https://github.com/abeldevelop/pagination-library) |
-| annotation-library | TODO |
-| aspect-library | TODO |
-| context-library | [Github Repository](https://github.com/abeldevelop/context-library) |
-| exception-library | [Github Repository](https://github.com/abeldevelop/exception-library) |
-| security-library | TODO |
-| common-library | [Github Repository](https://github.com/abeldevelop/common-library) |
-| test-library | [Github Repository](https://github.com/abeldevelop/test-library) |
+| Library | Description | Repository |
+| ------ | ------ | ------ |
+| logging-library | Configuracion del logback para los logs | [Github Repository](https://github.com/abeldevelop/abeldevelop-libraries/tree/develop/logging-library) |
+| propertie-library | Contiene properties generales. bootstrap.properties | [Github Repository](https://github.com/abeldevelop/abeldevelop-libraries/tree/develop/property-library) |
+| pagination-library | Mappers y objetos de paginacion | [Github Repository](https://github.com/abeldevelop/abeldevelop-libraries/tree/develop/pagination-library) |
+| annotation-library | Anotaciones propias de la arquitectura | TODO |
+| aspect-library | Aspectos de la arquitectura | TODO |
+| context-library | Beans the spring generales | [Github Repository](https://github.com/abeldevelop/abeldevelop-libraries/tree/develop/context-library) |
+| exception-library | Excepciones generales y Handler | [Github Repository](https://github.com/abeldevelop/abeldevelop-libraries/tree/develop/exception-library) |
+| security-library | | TODO |
+| common-library | Clases e interfaces comunes | [Github Repository](https://github.com/abeldevelop/abeldevelop-libraries/tree/develop/common-library) |
+| test-library | Configuracion para test con Cucumber | [Github Repository](https://github.com/abeldevelop/abeldevelop-libraries/tree/develop/test-library) |
 
  
 Servers repositories
@@ -87,9 +87,9 @@ Servers repositories
 
 | Server | Port | Repository |
 | ------ | ------ | ------ |
-| discovery-server | 8761 | TODO |
-| gateway-server | 9000 | TODO |
-| config-server | 8888 | TODO |
+| discovery-server | 8761 | [Github Repository](https://github.com/abeldevelop/abeldevelop-servers/tree/develop/discovery-server) |
+| gateway-server | 9000 | [Github Repository](https://github.com/abeldevelop/abeldevelop-servers/tree/develop/gateway-server) |
+| config-server | 8888 | [Github Repository](https://github.com/abeldevelop/abeldevelop-servers/tree/develop/config-server) |
 | hystrix-server | 0000 | TODO |
 | security-server | 0000 | TODO |
 | zipkin-server | 9411 | TODO |
