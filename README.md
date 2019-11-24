@@ -7,7 +7,7 @@ Este repositorio no tiene ningun tipo de codigo, simplemente es la documentació
 **[maven-archetypes](#maven-archetypes)**<br>
 **[Starters](#starters)**<br>
 **[Compilation and Excecution order](#compilation-and-excecution-order)**<br>
-**[Liraries Repositories](#liraries-repositories)**<br>
+**[Libraries Repositories](#libraries-repositories)**<br>
 **[Servers Repositories](#servers-repositories)**<br>
 **[Services Repositories](#services-repositories)**<br>
 **[Services Structure and modules](#services-structure-and-modules)**<br>
@@ -43,7 +43,7 @@ Compilation and Excecution order
 
 Lo primero de todo que se debe compilar es [Abeldevelop parent POM](https://github.com/abeldevelop/parent-pom/tree/develop/abeldevelop-parent-pom)
 
-Liraries compilation order
+Libraries compilation order
 ------
 * propertie-library
 * logging-library
@@ -65,7 +65,7 @@ Services execution order
 ------
 * No importa el orden de arranque. Solo necesita el **config-server** arrancado
 
-Liraries repositories
+Libraries repositories
 ======
 
 | Library | Repository |
