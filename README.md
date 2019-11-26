@@ -34,7 +34,7 @@ Para simplificar la gestión de las dependencias  ha creado un parent POM
 Abeldevelop Maven Archetype
 ======
 Para simplificar la creacion de nuevos servicios se ha creado un arquetipo maven
-* **Abeldevelop Service Archetype** => TODO
+* **[Abeldevelop Maven Archetype](https://github.com/abeldevelop/abeldevelop-maven-archetype)**
 
 
 Starters
@@ -55,11 +55,13 @@ Como cada parte (starters, libraries, servers y cada service) tiene su propio pa
 * **[Abeldevelop parent POM](https://github.com/abeldevelop/abeldevelop-parent-pom)**
 * **[Abeldevelop Libraries](https://github.com/abeldevelop/abeldevelop-libraries)**
 * **[Abeldevelop Starters](https://github.com/abeldevelop/abeldevelop-starters)**
-* **Abeldevelop Api Servers** => TODO
+* **[Abeldevelop Api Servers](https://github.com/abeldevelop/abeldevelop-servers)**
 
 Servers deployment order
 ------
+* config-server
 * discovery-server
+
 
 Services execution order
 ------
@@ -103,7 +105,7 @@ Services repositories
 | Service | Port | repository |
 | ------ | ------ | ------ |
 | blog-categories-service | 8210 | [Github Repository](https://github.com/abeldevelop/blog-categories-service) |
-| blog-subcategories-service | 8220 | TODO |
+| blog-subcategories-service | 8220 | [Github Repository](https://github.com/abeldevelop/blog-subcategories-service) |
 | blog-posts-service | 8230 | TODO |
 | blog-comments-service | 8240 | TODO |
 | blog-service | 8250 | TODO |
