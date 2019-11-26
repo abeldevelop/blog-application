@@ -186,6 +186,7 @@ Table services_versions (Pending schema)
 
 Pending to Develop
 ======
+* Handler the exceptions of spring data JpaSystemException and not showing the real message
 * Cucumber add extra headers
 * Cucumber read request from json in classpath
 * Cucumber validate response with json classpath
